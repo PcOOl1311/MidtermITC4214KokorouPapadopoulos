@@ -1,0 +1,94 @@
+/* Reset some default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Coolvetica, Arial, sans-serif;
+}
+
+/* Center the content vertically and horizontally */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: Coolvetica, Arial, sans-serif;
+  font-size: larger;
+}
+
+/* Set styles for the form */
+#form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+#form label {
+  display: none;
+}
+
+#form input[type="text"] {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+#form button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #4caf50;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#form button:hover {
+  background-color: #3e8e41;
+}
+
+/* Set styles for the table */
+#list {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 40rem;
+}
+
+#list th {
+  padding: 0.5rem;
+  text-align: left;
+  background-color: #f2f2f2;
+  color: #333;
+  cursor: pointer;
+}
+
+#list th:hover {
+  background-color: #e0e0e0;
+}
+
+#list td {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#list td:last-child {
+  text-align: center;
+}
+
+#list button {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #dc3545;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+#list button:hover {
+  background-color: #c82333;
+}

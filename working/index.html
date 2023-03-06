@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <meta charset="UTF-8">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+<h1>Grocery List</h1>
+<h3>This is a good project</h3>
+<div id="form" class="mb-lg-5">
+    <label for="NameofGrocery"></label><input type="text" id="NameofGrocery" placeholder="Name" required>
+    <label for="Quantity"></label><input type="text" id="Quantity" placeholder="Quantity" required>
+    <button onclick="addItem()">Add Item</button>
+</div>
+<table id="list" class="container mb-lg-5">
+    <thead>
+    <tr>
+        <th onclick="sortList(0)">Name</th>
+        <th onclick="sortList(1)">Quantity</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+</body>
+</html>
