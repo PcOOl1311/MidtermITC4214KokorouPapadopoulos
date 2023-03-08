@@ -1,79 +1,89 @@
 <!DOCTYPE html>
 <html lang="english">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is a grocery list project website">
-    <title>KIO-HOMEPAGE</title>
-    <link rel="stylesheet" href="../css/index.css">
-    <script src="../javascript/script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="This is a grocery list project website">
+  <title>KIO- Home Page</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <script src="../javascript/script.js"></script>
 </head>
 <body>
+<!--Navigation Bar beginning-->
 <section id="navbar">
-    <div class="position-sticky top-0">
-        <div class="logo">
-            <img src="../images/kionew.png">
-        </div>
-        <nav>
-            <ul class="navmenu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Us</a></li>
-            </ul>
-        </nav>
+  <div class="position-sticky top-0">
+    <div class="logo">
+      <img src="../images/kionew.png">
     </div>
+    <nav>
+      <ul class="navmenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </div>
 </section>
+<!--Navigation Bar ending-->
 
+
+<!--Grocery List beginning-->
 <section id="grocery-list">
-    <h1>Grocery List</h1>
-    <h4>This is a good project</h4>
-    <div id="form" class="mb-lg-5">
-        <label for="NameofGrocery"></label><input type="text" id="NameofGrocery" placeholder="Name" required>
-        <label for="Quantity"></label><input type="text" id="Quantity" placeholder="Quantity" required>
-        <button onclick="addItem()">Add Item</button>
-    </div>
-    <table id="list" class="container mb-lg-5">
-        <thead>
-        <tr>
-            <th onclick="sortList(0)">Name</th>
-            <th onclick="sortList(1)">Quantity</th>
-            <th></th>
-        </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+  <h1>Grocery List</h1>
+  <h4>This is a good project</h4>
+  <div id="form" class="mb-lg-5">
+    <label for="NameofGrocery"></label><input type="text" id="NameofGrocery" placeholder="Name" required>
+    <label for="Quantity"></label><input type="text" id="Quantity" placeholder="Quantity" required>
+    <button onclick="addItem()">Add Item</button>
+  </div>
+  <table id="list" class="container mb-lg-5">
+    <thead>
+    <tr>
+      <th onclick="sortList(0)">Name</th>
+      <th onclick="sortList(1)">Quantity</th>
+      <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
 </section>
+<!--Grocery List ending-->
 
+
+<!--Bootstrap-->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
       integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
+
+<!--Footer beginning-->
 <footer class="footer">
-    <div class="container bottom_border">
-        <div class="row">
-            <div class="col-sm-4 col-md col-sm-4  col-12 col">
-                <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
-                <p><i class="fa fa-location-arrow"></i> Gravias 6 Agia Paraskevi </p>
-                <p><i class="fa fa-phone"></i> +30-2106009800 </p>
-                <p><i class="fa fa fa-envelope"></i> g.kokorou@acg.edu </p>
-                <p><i class="fa fa fa-envelope"></i> konstantinos.papadopoulos@acg.edu</p>
+  <div class="container bottom_border">
+    <div class="row">
+      <div class="col-sm-4 col-md col-sm-4  col-12 col">
+        <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+        <p><i class="fa fa-location-arrow"></i> Gravias 6 Agia Paraskevi </p>
+        <p><i class="fa fa-phone"></i> +30-2106009800 </p>
+        <p><i class="fa fa fa-envelope"></i> g.kokorou@acg.edu </p>
+        <p><i class="fa fa fa-envelope"></i> konstantinos.papadopoulos@acg.edu</p>
 
-            </div>
+      </div>
 
-            <div class=" col-sm-4 col-md  col-6 col">
-                <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
-                <ul class="footer_ul_amrc">
-                    <li><a href="https://www.acg.edu/">ACG Home</a></li>
-                    <li><a href="https://blackboard.acg.edu/">Blackboard</a></li>
-                    <li><a href="https://campusweb.acg.edu/ics">MyACG</a></li>
-                </ul>
-            </div>
-        </div>
+      <div class=" col-sm-4 col-md  col-6 col">
+        <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+        <ul class="footer_ul_amrc">
+          <li><a href="https://www.acg.edu/">ACG Home</a></li>
+          <li><a href="https://blackboard.acg.edu/">Blackboard</a></li>
+          <li><a href="https://campusweb.acg.edu/ics">MyACG</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <p class="text-center">Copyright&copy 2023; | Designed by <a href="#">KIO</a></p>
+  <p class="text-center">Copyright&copy 2023; | Designed by <a href="#">KIO</a></p>
 </footer>
+<!--Footer ending-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>

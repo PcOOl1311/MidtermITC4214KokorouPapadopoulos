@@ -1,8 +1,9 @@
-/* Reset some default styles */
-#navbar {
-  position: sticky !important;
-  top: 0 !important;
+
+p {
+  font-size: 22px !important;
+  text-align: justify !important;
 }
+
 
 h2 {
   font-family: helvetica !important;
@@ -10,6 +11,19 @@ h2 {
   font-weight: bold !important;
   font-size: 35px !important;
   margin-bottom: 0 !important;
+}
+
+h4 {
+  font-style: italic;
+}
+
+h5 {
+  font-family: helvetica;
+}
+
+#navbar {
+  position: sticky !important;
+  top: 0 !important;
 }
 
 ul.navmenu {
@@ -61,7 +75,6 @@ a:active {
 }
 
 /* Center the content vertically and horizontally */
-
 body {
   /*display: flex;*/
   flex-direction: column;
@@ -73,6 +86,8 @@ body {
   margin: 0;
 }
 
+
+/*Grocery List CSS*/
 
 #grocery-list {
   box-sizing: border-box !important;
@@ -98,9 +113,11 @@ label {
   font-size: 20px;
   margin-top: 0px;
   margin-bottom: 50px;
+  overflow-y: auto;
 }
 
-/* Set styles for the form */
+/* Form CSS */
+
 #form {
   display: flex;
   align-items: center;
@@ -131,22 +148,23 @@ label {
   color: white;
   font-size: 1rem;
   cursor: pointer;
+
 }
 
 #form button:hover {
   background-color: #97e1ff;
 }
 
-/* Set styles for the table */
+/* Table CSS */
 #list {
   border-collapse: collapse;
   width: 100%;
   max-width: 40rem;
   text-align: center;
-  overflow-y: auto; /* Make the list scrollable vertically */
   max-height: calc(100vh - 380px); /* Set the maximum height of the list based on the viewport height and the height of the navbar and footer */
   margin-bottom: 400px !important;
 }
+
 
 #list th {
   padding: 0.5rem;
@@ -176,20 +194,13 @@ label {
   border-radius: 0.25rem;
   background-color: #dc3545;
   color: white;
-  font-size: 2rem;
+  font-size: 1rem;
   cursor: pointer;
+
 }
 
 #list button:hover {
   background-color: #c82333;
-}
-
-h4 {
-  font-style: italic;
-}
-
-h5 {
-  font-family: helvetica;
 }
 
 thead {
@@ -207,7 +218,9 @@ thead {
   padding: 10px 0px 25px 0px;
   position: relative;
   bottom: 0;
+  margin-top: 50px;
 }
+
 
 li.emails {
   list-style: none !important;
@@ -223,11 +236,11 @@ li.emails {
   color: #FFF;
 }
 
-
 .pt2 {
   padding-top: 40px;
   margin-bottom: 20px;
 }
+
 
 footer p {
   font-size: 13px;
@@ -242,12 +255,6 @@ footer p {
   list-style-type: none;
   font-size: 14px;
   padding: 0px 0px 10px 0px;
-}
-
-
-p {
-  font-size: 22px !important;
-  text-align: justify !important;
 }
 
 
