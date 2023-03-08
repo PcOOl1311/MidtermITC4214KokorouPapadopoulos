@@ -130,7 +130,7 @@ justify-content: center;
   border-collapse: collapse;
   width: 100%;
   max-width: 40rem;
-  justify-content: center;
+  margin: auto;
   text-align: center;
 }
 
@@ -149,6 +149,7 @@ justify-content: center;
 #list td {
   padding: 0.5rem;
   border-bottom: 1px solid #ccc;
+  vertical-align: middle;
 }
 
 #list td:last-child {
