@@ -9,23 +9,39 @@
     <script src="script.js"></script>
 </head>
 <body>
-<h1>Grocery List</h1>
-<h3>This is a good project</h3>
-<div id="form" class="mb-lg-5">
-    <label for="NameofGrocery"></label><input type="text" id="NameofGrocery" placeholder="Name" required>
-    <label for="Quantity"></label><input type="text" id="Quantity" placeholder="Quantity" required>
-    <button onclick="addItem()">Add Item</button>
-</div>
-<table id="list" class="container mb-lg-5">
-    <thead>
-    <tr>
-        <th onclick="sortList(0)">Name</th>
-        <th onclick="sortList(1)">Quantity</th>
-        <th></th>
-    </tr>
-    </thead>
-    <tbody>
-    </tbody>
-</table>
+<section id="navbar">
+    <div class="position-sticky top-0">
+        <div class="logo">
+            <img src="../images/kionew.png">
+        </div>
+        <nav>
+            <ul class="navmenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </div>
+</section>
+
+<section id="grocery-list">
+    <h1>Grocery List</h1>
+    <h5>This is a good project</h5>
+    <div id="form" class="mb-lg-5">
+        <label for="NameofGrocery"></label><input type="text" id="NameofGrocery" placeholder="Name" required>
+        <label for="Quantity"></label><input type="text" id="Quantity" placeholder="Quantity" required>
+        <button onclick="addItem()">Add Item</button>
+    </div>
+    <table id="list" class="container mb-lg-5">
+        <thead>
+        <tr>
+            <th onclick="sortList(0)">Name</th>
+            <th onclick="sortList(1)">Quantity</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</section>
 </body>
 </html>

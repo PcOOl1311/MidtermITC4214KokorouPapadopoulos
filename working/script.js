@@ -65,3 +65,16 @@ function sortList(column) {
     }
     renderList();
 }
+
+$(document).ready(function () {
+    $('.carousel').slick({
+        autoplay: true,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: false,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    });
+});
