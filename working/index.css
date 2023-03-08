@@ -71,7 +71,6 @@ margin: 0;
   margin: 0!important;
   padding: 0!important;
   font-family: helvetica!important;
-  background-color: #888888!important;
   text-align: center;
 
 }
@@ -81,6 +80,10 @@ margin: 0;
   margin-bottom: 0;
   alignment: center;
 
+}
+
+label{
+  justify-content: center;
 }
 
 #grocery-list h5 {
@@ -151,7 +154,6 @@ justify-content: center;
   border-bottom: 1px solid #ccc;
   vertical-align: middle;
 }
-
 #list td:last-child {
   text-align: center;
 }
