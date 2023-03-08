@@ -63,33 +63,47 @@ height: 100vh;
 font-family: helvetica;
 font-size: larger;
 margin: 0;
-
 }
+
 
 #grocery-list {
   box-sizing: border-box!important;
   margin: 0!important;
   padding: 0!important;
   font-family: helvetica!important;
-  alignment: center!important;
-  align-self: center!important;
   background-color: #888888!important;
+  text-align: center;
 
 }
 
+#grocery-list h1 {
+  font-size: 48px;
+  margin-bottom: 0;
+  alignment: center;
+
+}
+
+#grocery-list h5 {
+  font-size: 20px;
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 /* Set styles for the form */
 #form {
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin-bottom: 2rem;
+  justify-content: center!important;
+
 }
 
 #form label {
   display: none;
+  justify-content: center;
 }
 
 #form input[type="text"] {
+justify-content: center;
   padding: 0.5rem;
   margin-right: 0.5rem;
   border: none;
@@ -116,6 +130,8 @@ margin: 0;
   border-collapse: collapse;
   width: 100%;
   max-width: 40rem;
+  justify-content: center;
+  text-align: center;
 }
 
 #list th {
@@ -157,3 +173,7 @@ h5 {
   font-style: italic;
 }
 
+thead{
+  text-align: center;
+  justify-content: center;
+}
