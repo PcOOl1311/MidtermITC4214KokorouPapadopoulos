@@ -134,9 +134,10 @@ label {
   border-collapse: collapse;
   width: 100%;
   max-width: 40rem;
-  margin: auto;
   text-align: center;
-  overflow: auto;
+  overflow-y: auto; /* Make the list scrollable vertically */
+  max-height: calc(100vh - 380px); /* Set the maximum height of the list based on the viewport height and the height of the navbar and footer */
+  margin: auto auto 300px;
 }
 
 #list th {
