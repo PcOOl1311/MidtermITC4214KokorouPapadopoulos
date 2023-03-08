@@ -145,7 +145,8 @@ label {
   text-align: center;
   overflow-y: auto; /* Make the list scrollable vertically */
   max-height: calc(100vh - 380px); /* Set the maximum height of the list based on the viewport height and the height of the navbar and footer */
-  margin: auto auto 300px;
+  margin: auto auto 500px;
+  overflow-y: auto;
 }
 
 #list th {
@@ -184,8 +185,12 @@ label {
   background-color: #c82333;
 }
 
-h5 {
+h4 {
   font-style: italic;
+}
+
+h5 {
+  font-family: helvetica;
 }
 
 thead {
@@ -195,11 +200,12 @@ thead {
 
 /*Footer CSS*/
 .footer {
-  background-color: #224054 !important;
-  width: 100% !important;
-  min-height: 250px !important;
-  padding: 10px 0px 25px 0px !important;
-  position: relative;
+  justify-content: center;
+  background-color: #224054;
+  width: 100%;
+  min-height: 250px;
+  padding: 10px 0px 25px 0px;
+  position: fixed;
   bottom: 0;
 }
 
@@ -210,7 +216,6 @@ li.emails {
   font-family: helvetica !important;
   color: #ffffff !important;
   opacity: 100% !important;
-
 }
 
 
@@ -238,4 +243,12 @@ footer p {
   font-size: 14px;
   padding: 0px 0px 10px 0px;
 }
+
+
+p {
+  font-size: 22px !important;
+  text-align: justify !important;
+}
+
+
 
