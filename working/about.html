@@ -2,33 +2,37 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Carousel Example</title>
-  <!-- Slick CSS -->
+  <title>KIO-About Us</title>
+  <meta name="description"
+        content="This is the about page for the KIO website"/>
+  <meta name="contents"
+        content="This page includes a carousel and the grid cards of the creators"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
   <link rel="stylesheet" href="footer.css">
-  <link rel="stylesheet" href="test.css" type="text/css">
+  <link rel="stylesheet" href="about.css" type="text/css">
   <script src="sticky.js"></script>
 </head>
 <body>
-
+<!--Navigation bar beginning-->
 <section id="navbar">
   <div class="position-sticky top-0">
     <div class="logo">
       <img src="kionew.png">
     </div>
 
-
     <nav>
       <ul class="navmenu">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="2nd.html">About Us</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
       </ul>
     </nav>
   </div>
 </section>
 
+<!--Navigation bar end-->
 
+<!--Carousel beginning-->
 <div class="carousel">
   <div><img src="https://picsum.photos/800/400?random=1" alt="Slide 1"></div>
   <div><img src="https://picsum.photos/800/400?random=2" alt="Slide 2"></div>
@@ -38,7 +42,9 @@
 <!-- Slick JS -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-<!-- Custom JS -->
+
+
+<!-- Carousel JS -->
 <script>
   $(document).ready(function () {
     $('.carousel').slick({
@@ -50,54 +56,71 @@
       speed: 500,
       slidesToShow: 1,
       slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 992,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            infinite: true,
-            dots: true
-          }
-        },
-        {
-          breakpoint: 768,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        },
-        {
-          breakpoint: 576,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1
-          }
-        }
-      ]
+      // responsive: [     USER INTERACTIVITY
+      //   {
+      //     breakpoint: 992,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1,
+      //       infinite: true,
+      //       dots: true
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 768,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1
+      //     }
+      //   },
+      //   {
+      //     breakpoint: 576,
+      //     settings: {
+      //       slidesToShow: 1,
+      //       slidesToScroll: 1
+      //     }
+      //   }
+      // ]
     });
   });
 </script>
 
+<!--Carousel ending-->
+
+<!--Grid cards-->
 <!--Kostas Card-->
-<section id="grid-cards">
-  <div class="col-lg-10">
-    <div class="card">
-      <img src="Kostas.png" alt="Kostas">
-      <div class="card-content">
-        <h2>Kostas Papadopoulos</h2>
-        <p>Reallly cool IT guy</p>
+<section id="grid-cards" class="row">
+  <div class="col-lg-15">
+    <div class="card d-flex align-items-center">
+      <div class="img-container mr-3 d-flex align-items-center">
+        <img src="Kostas.png" alt="Kostas" class="img-fluid rounded-circle mr-3">
+        <div class="card-content">
+          <h2>Kostas Papadopoulos</h2>
+          <h3>Really cool IT guy</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit augue non scelerisque
+            vestibulum. Pellentesque ac dolor fringilla, ornare lectus ut, aliquet enim. Suspendisse eget porta arcu.
+            Fusce metus ante, auctor ac nisl id, fringilla aliquet magna. Quisque et dictum metus. Aliquam lacinia
+            euismod dapibus. Nulla facilisi. Mauris euismod in urna id suscipit. Curabitur venenatis ligula ex, et
+            finibus lacus sollicitudin non. Vestibulum vel ultricies diam.</p>
+        </div>
       </div>
     </div>
   </div>
 
   <!--Gio Card-->
-  <div class="col-lg-10">
-    <div class="card">
-      <img src="Giolena.png" alt="Giolena">
-      <div class="card-content">
-        <h2>Giolena Kokorou</h2>
-        <p>Really cool IT gal</p>
+  <div class="col-lg-15">
+    <div class="card d-flex align-items-center">
+      <div class="img-container mr-3 d-flex align-items-center">
+        <img src="Giolena.png" alt="Giolena" class="img-fluid rounded-circle mr-3">
+        <div class="card-content">
+          <h2>Giolena Kokorou</h2>
+          <h3>Really cool IT gal</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum blandit augue non scelerisque
+            vestibulum. Pellentesque ac dolor fringilla, ornare lectus ut, aliquet enim. Suspendisse eget porta arcu.
+            Fusce metus ante, auctor ac nisl id, fringilla aliquet magna. Quisque et dictum metus. Aliquam lacinia
+            euismod dapibus. Nulla facilisi. Mauris euismod in urna id suscipit. Curabitur venenatis ligula ex, et
+            finibus lacus sollicitudin non. Vestibulum vel ultricies diam.</p>
+        </div>
       </div>
     </div>
   </div>
@@ -111,17 +134,18 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
       integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
-
+<!--Footer beginning-->
 <footer class="footer">
   <div class="container bottom_border">
     <div class="row">
       <div class=" col-sm-4 col-md col-sm-4  col-12 col">
         <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
-        <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-        <p><i class="fa fa-phone"></i> +91-9999878398 </p>
-        <p><i class="fa fa fa-envelope"></i> notarealemail@hotmailcom </p>
-      </div>
+        <p><i class="fa fa-location-arrow"></i> Gravias 6 Agia Paraskevi </p>
+        <p><i class="fa fa-phone"></i> +30-2106009800 </p>
+        <p><i class="fa fa fa-envelope"></i> g.kokorou@acg.edu </p>
+        <p><i class="fa fa fa-envelope"></i> konstantinos.papadopoulos@acg.edu</p>
 
+      </div>
 
       <div class=" col-sm-4 col-md  col-6 col">
         <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
@@ -135,9 +159,13 @@
 
   <p class="text-center">Copyright&copy 2023; | Designed by <a href="#">KIO</a></p>
 </footer>
+<!--Footer ending-->
+
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
         crossorigin="anonymous"></script>
+
 
 </body>
 </html>
