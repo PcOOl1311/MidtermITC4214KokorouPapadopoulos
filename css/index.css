@@ -1,260 +1,260 @@
 
 p {
-  font-size: 22px !important;
-  text-align: justify !important;
+    font-size: 22px !important;
+    text-align: justify !important;
 }
 
 
 h2 {
-  font-family: helvetica !important;
-  font-style: italic;
-  font-weight: bold !important;
-  font-size: 35px !important;
-  margin-bottom: 0 !important;
+    font-family: helvetica, serif !important;
+    font-style: italic;
+    font-weight: bold !important;
+    font-size: 35px !important;
+    margin-bottom: 0 !important;
 }
 
 h4 {
-  font-style: italic;
+    font-style: italic;
 }
 
 h5 {
-  font-family: helvetica;
+    font-family: helvetica;
 }
 
 #navbar {
-  position: sticky !important;
-  top: 0 !important;
+    position: sticky !important;
+    top: 0 !important;
 }
 
 ul.navmenu {
-  background-color: #224054 !important;
-  height: 80px !important;
+    background-color: #224054 !important;
+    height: 80px !important;
 
-  display: flex !important;
-  justify-content: center !important;
-  margin-top: 0px !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin-top: 0px !important;
 
 }
 
 ul.navmenu li {
-  margin: 4px !important;
-  list-style-type: none !important;
-  font-family: helvetica !important;
-  font-color: #FFFFFF !important;
-  font-size: 30px !important;
-  font-weight: bold !important;
-  padding: 20px 40px !important;
-  text-decoration: none !important;
-  alignment: center !important;
+    margin: 4px !important;
+    list-style-type: none !important;
+    font-family: helvetica !important;
+    font-color: #FFFFFF !important;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    padding: 20px 40px !important;
+    text-decoration: none !important;
+    alignment: center !important;
 }
 
 .logo img {
-  width: 70px !important;
-  height: 80px !important;
-  position: absolute !important;
-  margin-top: 5px !important;
-  margin-left: 30px !important;
+    width: 70px !important;
+    height: 80px !important;
+    position: absolute !important;
+    margin-top: 5px !important;
+    margin-left: 30px !important;
 }
 
 a:link {
-  color: #ffffff !important;
-  text-decoration: none !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
 a:visited {
-  color: #ffffff !important;
+    color: #ffffff !important;
 }
 
 a:hover {
-  color: #97e1ff !important;
-  text-decoration: underline !important;
+    color: #97e1ff !important;
+    text-decoration: underline !important;
 }
 
 a:active {
-  color: #62ffff !important;
+    color: #62ffff !important;
 }
 
 /* Center the content vertically and horizontally */
 body {
-  /*display: flex;*/
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: helvetica;
-  font-size: larger;
-  margin: 0;
+    /*display: flex;*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: helvetica;
+    font-size: larger;
+    margin: 0;
 }
 
 
 /*Grocery List CSS*/
 
 #grocery-list {
-  box-sizing: border-box !important;
-  margin: 0 !important;
-  padding: 0 !important;
-  font-family: helvetica !important;
-  text-align: center;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-family: helvetica !important;
+    text-align: center;
 
 }
 
 #grocery-list h1 {
-  font-size: 48px;
-  margin-bottom: 0;
-  alignment: center;
+    font-size: 48px;
+    margin-bottom: 0;
+    alignment: center;
 
 }
 
 label {
-  justify-content: center;
+    justify-content: center;
 }
 
 #grocery-list h5 {
-  font-size: 20px;
-  margin-top: 0px;
-  margin-bottom: 50px;
-  overflow-y: auto;
+    font-size: 20px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    overflow-y: auto;
 }
 
 /* Form CSS */
 
 #form {
-  display: flex;
-  align-items: center;
-  margin-bottom: 2rem;
-  justify-content: center !important;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    justify-content: center !important;
 
 }
 
 #form label {
-  display: none;
-  justify-content: center;
+    display: none;
+    justify-content: center;
 }
 
 #form input[type="text"] {
-  justify-content: center;
-  padding: 0.5rem;
-  margin-right: 0.5rem;
-  border: none;
-  border-radius: 0.25rem;
-  font-size: 1rem;
+    justify-content: center;
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
 }
 
 #form button {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 0.25rem;
-  background-color: #224054;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #224054;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
 
 }
 
 #form button:hover {
-  background-color: #97e1ff;
+    background-color: #97e1ff;
 }
 
 /* Table CSS */
 #list {
-  border-collapse: collapse;
-  width: 100%;
-  max-width: 40rem;
-  text-align: center;
-  max-height: calc(100vh - 380px); /* Set the maximum height of the list based on the viewport height and the height of the navbar and footer */
-  margin-bottom: 400px !important;
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 40rem;
+    text-align: center;
+    max-height: calc(100vh - 380px); /* Set the maximum height of the list based on the viewport height and the height of the navbar and footer */
+    margin-bottom: 400px !important;
 }
 
 
 #list th {
-  padding: 0.5rem;
-  text-align: left;
-  background-color: #f2f2f2;
-  color: #333;
-  cursor: pointer;
+    padding: 0.5rem;
+    text-align: left;
+    background-color: #f2f2f2;
+    color: #333;
+    cursor: pointer;
 }
 
 #list th:hover {
-  background-color: #e0e0e0;
+    background-color: #e0e0e0;
 }
 
 #list td {
-  padding: 0.5rem;
-  border-bottom: 1px solid #ccc;
-  vertical-align: middle;
+    padding: 0.5rem;
+    border-bottom: 1px solid #ccc;
+    vertical-align: middle;
 }
 
 #list td:last-child {
-  text-align: center;
+    text-align: center;
 }
 
 #list button {
-  padding: 0.5rem;
-  border: none;
-  border-radius: 0.25rem;
-  background-color: #dc3545;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    background-color: #dc3545;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
 
 }
 
 #list button:hover {
-  background-color: #c82333;
+    background-color: #c82333;
 }
 
 thead {
-  text-align: center;
-  justify-content: center;
+    text-align: center;
+    justify-content: center;
 }
 
 /*Footer CSS*/
 .footer {
-  margin-top: 100px;
-  justify-content: center;
-  background-color: #224054;
-  width: 100%;
-  min-height: 100px;
-  padding: 10px 0px 25px 0px;
-  position: relative;
-  bottom: 0;
-  margin-top: 50px;
+    margin-top: 100px;
+    justify-content: center;
+    background-color: #224054;
+    width: 100%;
+    min-height: 100px;
+    padding: 10px 0px 25px 0px;
+    position: relative;
+    bottom: 0;
+    margin-top: 50px;
 }
 
 
 li.emails {
-  list-style: none !important;
-  font-size: 22px !important;
-  text-align: justify !important;
-  font-family: helvetica !important;
-  color: #ffffff !important;
-  opacity: 100% !important;
+    list-style: none !important;
+    font-size: 22px !important;
+    text-align: justify !important;
+    font-family: helvetica !important;
+    color: #ffffff !important;
+    opacity: 100% !important;
 }
 
 
 .col_white_amrc {
-  color: #FFF;
+    color: #FFF;
 }
 
 .pt2 {
-  padding-top: 40px;
-  margin-bottom: 20px;
+    padding-top: 40px;
+    margin-bottom: 20px;
 }
 
 
 footer p {
-  font-size: 13px;
-  color: #CCC;
-  padding-bottom: 0px;
-  margin-bottom: 8px;
+    font-size: 13px;
+    color: #CCC;
+    padding-bottom: 0px;
+    margin-bottom: 8px;
 }
 
 
 .footer_ul_amrc {
-  margin: 0px;
-  list-style-type: none;
-  font-size: 14px;
-  padding: 0px 0px 10px 0px;
+    margin: 0px;
+    list-style-type: none;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
 }
 
 
